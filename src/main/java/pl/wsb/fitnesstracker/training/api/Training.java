@@ -37,10 +37,10 @@ public class Training {
     @Column(name = "activity_type", nullable = false)
     private ActivityType activityType;
 
-    @Column(name = "distance")
+    @Column(nullable = false)
     private double distance;
 
-    @Column(name = "average_speed")
+    @Column(name = "average_speed", nullable = false)
     private double averageSpeed;
 
     public Training(
